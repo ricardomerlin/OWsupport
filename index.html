@@ -1,488 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href='https://fonts.googleapis.com/css?family=League Script' rel='stylesheet'>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital@0;1&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@1&family=Forum&display=swap"
-    rel="stylesheet">
-
-  <meta property="og:title" content="OpenWeb Support Hub" />
-  <meta property="og:url" content="https://s3.amazonaws.com/www.spotim.name/Rebecca/AskUsAnything2021+(2).html" />
-  <meta name="description" content="One stop shop for forms, processes, and materials for the Commercial Team." />
-  <meta property="og:type" content="author">
-  <meta property="og:image" content="https://invisionkc.com/wp-content/uploads/2018/08/AdobeStock_95966077_edit.jpg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OpenWeb Support Hub</title>
-  <style>
-    .header {
-      text-align: center;
-      justify-content: center;
-      padding-bottom: 20px;
-      font-family: 'Noticia Text', serif;
-      font-weight: 400;
-      overflow-x: visible;
-      background-color: #f1e9e7;
-    }
-
-    body {
-      overflow-x: hidden;
-      font-family: 'Noticia Text', serif;
-      background-color: #f1e9e7;
-    }
-
-    .content {
-      margin: auto;
-      margin-top:30px;
-      width: 90%;
-      display: flex;
-      flex-wrap: wrap;
-      height:500px;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .conversation {
-      margin: auto;
-      width: 80%;
-      margin-top:40px;
-    }
-
-    li {
-      /*font-style:italic;*/
-    }
-
-    .title {
-      font-family: 'Noticia Text', serif;
-      color: black !important;
-      font-size: 45px;
-      text-align: center;
-      margin-top: 40px;
-      padding:25px;
-      text-decoration: none;
-    }
-
-    .title a {
-      color: black !important;
-      text-decoration: none !important;
-    }
-
-    .siderail {
-      width: 25%;
-      margin-left: 15px;
-    }
-
-    .vl {
-      border-left: 4px solid gray;
-      /* top-left | top-right | bottom-right | bottom-left */
-      border-radius: 4px;
-      height: 500px;
-      margin-left: 15px;
-      padding:20px;
-      margin-top:50px;
-    }
-
-    .dropdown-item.active,
-    .dropdown-item:active {
-      color: #fff;
-      background-color: darkgray !important;
-    }
-
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 4px;
-    }
-
-    /* Create three equal columns that sits next to each other */
-    .column {
-      flex: 50%;
-      max-width: 50%;
-      margin-top:30px;
-      padding: 0px 4px;
-    }
-
-    .column img {
-      vertical-align: middle;
-      width: 100%;
-    }
-
-    .navbar-nav>li {
-      font-size: 15px;
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-
-    .imgcontainer {
-      position: relative;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .image {
-      opacity: 1;
-      transition: .5s ease;
-      backface-visibility: hidden;
-      border-radius:3px;
-    }
-
-    .middle {
-      transition: .3s ease;
-      opacity: 0;
-      position: absolute;
-      top: 120%;
-      left: 50%;
-      width: 90%;
-      transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    .imgcontainer:hover .image {
-      opacity: 0.8;
-    }
-
-    .imgcontainer:hover .middle {
-      opacity: 1;
-      top: 95%;
-    }
-
-    .text {
-      border-radius: 4px;
-      background-color: #f1e9e7;
-      color: black;
-      font-size: 0.9vw;
-      font-family: 'Noticia Text', serif;
-      padding: 5px 12px;
-    }
-
-    .mockups {
-      display: flex;
-      flex-wrap: wrap;
-      height:500px;
-      align-items: center;
-      justify-content: space-evenly;
-    }
-
-    #mockup {
-      background-color:rgba(255,255,255,0.3);
-      padding: 8px 8px;
-      text-align: center;
-      width:330px;
-      border-radius: 11px;
-      margin-right:11px;
-      margin-bottom:11px;
-    }
-
-    #mockup-img {
-      width:100%;
-      justify-items: center;
-      align-items: center;
-      border-radius: 10px;
-    }
-
-    #mockup-img-bg {
-      height:230px;
-      background-color: white;
-      border-radius: 11px;
-      overflow: hidden;
-    }
-
-    .button {
-      padding:5px;
-      width:45%;
-      background-color: #916968;
-      border:none;
-      border-radius: 4px;
-      font-weight: bold;
-      color:white;
-      font-size:18px;
-    }
-
-    .button:hover {
-      background-color: #7d5a59;
-      cursor: pointer;
-    }
-
-    .button:active {
-      outline: none;
-      background-color: #916968;
-    }
-
-    .button:focus {
-      outline: none;
-      background-color: #916968;
-    }
-
-    .pdf {
-      width:80%;
-      margin:auto;
-      text-align: center;
-    }
-
-  </style>
-
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-  <div class="title">
-    <a href="https://s3.amazonaws.com/www.spotim.name/Rebecca/AskUsAnything2021+(2).html">OpenWeb Tech Support</a>
-  </div>
-
-  <div class="header">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f1e9e7;">
-      <!-- Brand -->
-      <a class="d-lg-none navbar-brand" href="#">Links</a>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <!-- Links -->
-        <ul class="navbar-nav ml-auto mx-auto">
-
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://s3.amazonaws.com/www.spotim.name/Olivia/LiveDemo.html">Live Demos</a>
-          </li>
-
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              General Resources
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item"
-                href="https://www.notion.so/openweb/Tech-Support-bb5ef96f5b2841f5b8d3358c831bf3fa">Tech Support
-                Guide</a>
-              <a class="dropdown-item"
-                href="https://www.notion.so/openweb/Support-Workflow-2a08ed8d9b784a11858a56668f6acf21">Support
-                Workflow</a>
-            </div>
-          </li>
-
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Product Requests
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item"
-                href="https://www.notion.so/openweb/Product-Feature-Requests-bf3ffe10619a45b4ab273e52cbfe3aba">Product
-                Request Flow</a>
-              <a class="dropdown-item"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSd45U-Jlh4W5ssXZDaUx7fixEDunvqCj5NA7rGnr4mYElA02A/viewform">PSM
-                Product Request Form</a>
-              <a class="dropdown-item"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSc4j5RJ2WNuGVmkWpEYGnZxoefpFW4rLteZDevXcjpQEbm3kA/viewform">BD
-                Product Request Form</a>
-              <a class="dropdown-item" href="https://open-web.monday.com/boards/686909603">Product Requests Board</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Implementation
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item"
-                href="https://www.notion.so/openweb/New-Partner-b16a251d421f4081ad3850f707f260f9">Implementation
-                Flow</a>
-              <a class="dropdown-item"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdWE3v8mAm1QzjAzdP9A4gbge2WtCrk8rATGkrQw71iIh4MbQ/viewform">Official
-                Onboarding Form</a>
-              <a class="dropdown-item"
-                href="https://www.notion.so/openweb/How-to-create-a-new-Spot-ID-04aee684bf97444aacfd4d82672db5c3">SPOT
-                ID Creation</a>
-              <a class="dropdown-item" href="https://3.basecamp.com/4298113/">Basecamp</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              QA
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item"
-                href="https://www.notion.so/openweb/QA-Booking-for-Publisher-Launch-7b6de145d924428c8b3b44c2c811770a">QA
-                Flow</a>
-              <a class="dropdown-item"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScJgGc6-TDVDZZ2CU7NfBxiP7rlRqgAWkEpSH_2nCdw0K89BA/viewform">QA
-                Request Form</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Salesforce Ticket Info
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item"
-                href="https://www.notion.so/openweb/1b67caae39f4488caaeff7a3e454548f?v=c66c0964705b4d969999a61134328e59">Product
-                Ownership</a>
-              <a class="dropdown-item"
-                href="https://www.notion.so/openweb/How-to-Write-a-Zendesk-Ticket-04c48535f01e4f0e91ba33cf346a4f49">Zendesk
-                Flow</a>
-              <a class="dropdown-item"
-                href="https://docs.google.com/forms/d/e/1FAIpQLScIVm0vD6A3yC8OW26Iog9jwppqN9T4NUyaL8AJ5pTlQREMvQ/viewform">Write
-                a Ticket</a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Moderation
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item btn disabled">** INTERNAL USE ONLY **</a>
-              <a class="dropdown-item"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdjwBxaqdRl_butkzn3BjMuo1P47R_sd5w0-cyFB_uODT3BkA/viewform">**
-                Preliminary Questions **</a>
-              <a class="dropdown-item"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfN3t1XA52K3ntZ4VVI-MZ-U_3jbaCqFOVW786aWjake0nkjQ/viewform">Publisher
-                Moderation Request</a>
-            </div>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link"
-              href="https://www.notion.so/openweb/ffee7ecef1184c09a787765bc1340ed1?v=1261f29f0bdd4750a26aa0c06d3f7c4e">Coming
-              Soon...</a>
-          </li>
-
-        </ul>
-      </div>
-    </nav>
-
-
-  </div>
-
+  <link rel="stylesheet" href="./style.css" />
 </head>
-
-<body style="background-color: #f1e9e7; font-family: 'Noticia Text', serif;">
-  <div class="content">
-
-    <div class="pdf">
-      <object data="https://s3.amazonaws.com/www.spotim.name/Olivia/Olivia's+Support+Workflow+Final.pdf#toolbar=0&navpanes=0&scrollbar=0&statusbar=0&messages=0&scrollbar=0" type="application/pdf" width="900vw" height="638vh">
-        alt : <a href="https://s3.amazonaws.com/www.spotim.name/Olivia/Olivia's+Support+Workflow+Final.pdf">SupportWorkflow.pdf</a>
-      </object>
+<body>
+  <div class="top-container">
+    <div class="title">
+      OpenWeb Technical Support
     </div>
-
-    <!-- <div id="mockup">
-      <div id="mockup-img-bg">
-        <img id="mockup-img" src="https://files.readme.io/8504deb-pitc.png">
-      </div>
-      <p><br>Conversation <br> Double Decker PITC <br> Siderail Spotlight</p>
-      <a href="https://s3.amazonaws.com/www.spotim.name/Rebecca/Tropical+Storm+Nicholas+Hits+Texas+Coast+With+Heavy+Rain%2C+Strong+Winds+_+HuffPost.html"><button type="button" class="button">Live Demo</button></a>
-      <p></p>
-    </div>
-
-    <div id="mockup">
-      <div id="mockup-img-bg">
-        <img id="mockup-img" src="https://files.readme.io/bb2a82b-Topic_Tracker.png">
-      </div>
-      <p><br>Conversation <br> Topic Tracker <br> Siderail Reactions</p>
-      <a href="https://s3.amazonaws.com/www.spotim.name/Olivia/HuffMock.html"><button type="button" class="button">Live Demo</button></a>
-      <p></p>
-    </div>
-
-    <div id="mockup">
-      <div id="mockup-img-bg">
-        <img id="mockup-img" src="https://files.readme.io/28a4b24-Community_Spotlight.png">
-      </div>
-      <p><br>Conversation <br> Siderail PITC <br> Spotlight</p>
-      <a href="https://s3.amazonaws.com/www.spotim.name/Rebecca/SNL.html"><button type="button" class="button">Live Demo</button></a>
-      <p></p>
-    </div>
-
-    <div id="mockup">
-      <div id="mockup-img-bg">
-        <img id="mockup-img" src="https://files.readme.io/d3921a3-live-blog.png">
-      </div>
-      <p><br>Live Blog</p>
-      <a href="#"><button type="button" class="button">Live Demo</button></a>
-      <p></p>
-    </div> -->
-
-    <!-- <div class="vl"></div>
-
-    <div class="siderail">
-      <div class="row">
-        <div class="column">
-
-          <div class="imgcontainer">
-            <img alt="Richard Chen" src="https://www.openweb.com/uploads/2020/06/richard-chen@2x.png" class="image">
-            <div class="middle">
-              <div class="text">Richard Chen</div>
-            </div>
-          </div>
-          <div class="imgcontainer">
-            <img alt="Danielle O’Neill" src="https://www.openweb.com/uploads/2020/06/danielle-o-neill@2x.png" class="image">
-            <div class="middle">
-              <div class="text">Danielle O'Neill</div>
-            </div>
-          </div>
-          <div class="imgcontainer">
-            <img alt="Rebecca Tong" src="https://www.openweb.com/uploads/2021/01/Rebecca-Tong.jpg" class="image">
-            <div class="middle">
-              <div class="text">Rebecca Tong</div>
-            </div>
-          </div>
-          <div class="imgcontainer">
-            <img alt="Eli Cooper" src="https://s3.amazonaws.com/www.spotim.name/Rebecca/EliCooper.headshot2.png" class="image">
-            <div class="middle">
-              <div class="text">Eli Cooper</div>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <div class="imgcontainer">
-            <img alt="Itay Mor" src="https://www.openweb.com/uploads/2020/06/itay-mor@2x.png" class="image">
-            <div class="middle">
-              <div class="text">Itay Mor</div>
-            </div>
-          </div>
-          <div class="imgcontainer">
-            <img alt="Alex Elkhatb" src="https://www.openweb.com/uploads/2021/01/Alex-Elkhatb.jpg" class="image">
-            <div class="middle">
-              <div class="text">Alex Elkhatb</div>
-            </div>
-          </div>
-          <div class="imgcontainer">
-            <img alt="Olivia Wissig" src="https://s3.amazonaws.com/www.spotim.name/Rebecca/OliviaWissig.jpg" class="image">
-            <div class="middle">
-              <div class="text">Olivia Wissig</div>
-            </div>
-          </div>
+    <div class="navbar">
+      <div class="dropdown">
+        <a href="#">Global Tech Solutions</a>
+        <div class="dropdown-content">
+          <a href="https://www.notion.so/openweb/Tech-Support-bb5ef96f5b2841f5b8d3358c831bf3fa">Tech Support Guide</a>
+          <a href="https://www.notion.so/openweb/Support-Workflow-2a08ed8d9b784a11858a56668f6acf21">Support Workflow</a>
         </div>
       </div>
-    </div> -->
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"></script>
-
-    <div class="conversation">
-      <script async src="https://launcher.spot.im/spot/sp_Grztk52Z" data-spotim-module="spotim-launcher"
-        data-post-url="ARTICLE_URL" data-article-tags="ARTICLE_TOPIC1, ARTICLE_TOPIC2" data-post-id="POST_ID">
-        </script>
-    </div>
+      <div class="dropdown">
+        <a href="#">Product Requests</a>
+        <div class="dropdown-content">
+          <a href="https://www.notion.so/openweb/Tech-Support-Request-Cheatsheet-9e11f89f02ee466ca7aebafe702f2cc5">Tech Support Request Guide</a>
+          <a href="https://openweb.lightning.force.com/lightning/o/Case/new">Submit a Support Ticket</a>
+          <a href="https://open-web.monday.com/boards/686909603">Product Requests Board</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Implementation</a>
+        <div class="dropdown-content">
+          <a href="https://www.notion.so/openweb/New-Partner-b16a251d421f4081ad3850f707f260f9">Implementation Flow</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWE3v8mAm1QzjAzdP9A4gbge2WtCrk8rATGkrQw71iIh4MbQ/viewform">Official Onboarding Form</a>
+          <a href="https://www.notion.so/openweb/How-to-create-a-new-Spot-ID-04aee684bf97444aacfd4d82672db5c3">SPOT ID Creation</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">QA</a>
+        <div class="dropdown-content">
+          <a href="https://www.notion.so/openweb/QA-Booking-for-Publisher-Launch-7b6de145d924428c8b3b44c2c811770a">QA Flow</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJgGc6-TDVDZZ2CU7NfBxiP7rlRqgAWkEpSH_2nCdw0K89BA/viewform">QA Request Form</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Salesforce Ticket Info</a>
+        <div class="dropdown-content">
+          <a href="https://www.notion.so/openweb/1b67caae39f4488caaeff7a3e454548f?v=c66c0964705b4d969999a61134328e59">Product Ownership</a>
+          <a href="https://www.notion.so/openweb/How-to-Write-a-Zendesk-Ticket-04c48535f01e4f0e91ba33cf346a4f49">Zendesk Flow</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScIVm0vD6A3yC8OW26Iog9jwppqN9T4NUyaL8AJ5pTlQREMvQ/viewform">Write a Ticket</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a href="#">Moderation</a>
+        <div class="dropdown-content">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjwBxaqdRl_butkzn3BjMuo1P47R_sd5w0-cyFB_uODT3BkA/viewform">** Preliminary Questions **</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfN3t1XA52K3ntZ4VVI-MZ-U_3jbaCqFOVW786aWjake0nkjQ/viewform">Publisher Moderation Request</a>
+        </div>
+      </div>
     </div>
   </div>
-
 </body>
-
 
 </html>
