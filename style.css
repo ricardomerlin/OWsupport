@@ -3,19 +3,23 @@ body {
   background-color: #f1e9e7;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 .top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  padding: 0;
 }
 
 .title {
   font-size: 36px;
-  margin-top: 30px;
+  margin-top: 20px;
+  position: fixed;
   color: black;
-  text-align: center;
   width: 100%;
+  text-align: center;
 }
 
 .navbar {
@@ -35,7 +39,7 @@ body {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  padding: 10px 0;
+  padding: 60px 0;
   display: block;
   width: 100%;
 }
@@ -47,10 +51,13 @@ body {
 
 .navbar .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute;
+  left: 100%;
+  top: 0;
   background-color: #f9f9f9;
-  width: 100%;
+  width: 250px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .navbar .dropdown:hover .dropdown-content {
@@ -68,6 +75,10 @@ body {
   background-color: #f1e9e7;
 }
 
-body .title {
+.main-page-content {
   margin-left: 270px;
+  padding: 20px;
+  max-width: 80%;
+  margin-top: 300px;
+  overflow-y: auto;
 }
