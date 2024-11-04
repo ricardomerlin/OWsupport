@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Load jQuery
     const script1 = document.createElement('script');
     script1.src = "https://code.jquery.com/jquery-3.2.1.slim.min.js";
     script1.integrity = "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN";
@@ -17,4 +18,17 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.appendChild(script1);
     document.body.appendChild(script2);
     document.body.appendChild(script3);
+
+    const navbar = document.querySelector(".navbar");
+
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+      
 });
