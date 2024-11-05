@@ -32,3 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
       });
       
 });
+
+function scrollToConversation() {
+  var target = document.querySelector('.conversation-example');
+  
+  target.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+  });
+}

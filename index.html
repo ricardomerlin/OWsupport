@@ -7,6 +7,11 @@
   <title>OpenWeb Support Hub</title>
   <link rel="stylesheet" href="./style.css" />
   <script src="script.js" defer></script>
+  <meta property="og:keyword" content="Support" />
+  <meta property="og:keyword" content="OpenWeb" />
+  <meta property="og:keyword" content="Technical" />
+  <meta property="og:keyword" content="Assistance" />
+  <meta property="og:keyword" content="Donuts" />
   <script 
       async 
       src="https://launcher.spot.im/spot/sp_mPoNtNP6"
@@ -23,7 +28,7 @@
     <!-- Added options below the title -->
     <div class="options">
       <a href="#" class="option-link" onclick="showContent('team')">Meet the Team</a>
-      <a href="#" class="option-link" onclick="showContent('page1')">Learn About OW Products</a>
+      <a href="#" class="option-link" onclick="showContent('products')">Learn About OW Products</a>
     </div>
 
     <div class="navbar">
@@ -69,7 +74,6 @@
       <p>Praesent ornare congue metus, id convallis erat elementum et. Proin vulputate neque at mi sagittis, at elementum elit dictum. Phasellus suscipit enim at magna ullamcorper, quis gravida lorem fermentum. Nunc vel lacinia ligula, at sodales arcu. Duis et ex ut odio varius dictum ut in leo. Etiam euismod, metus ac tempus blandit, purus sapien tincidunt nulla, non pellentesque mauris justo vel lacus.</p>
     </div>
     
-    
   </div>
 
   <script>
@@ -89,20 +93,26 @@
             </ul>
           `;
           break;
-        case 'page1':
+        case 'products':
           content = `
             <h2>More about our products</h2>
-            <p>Welcome to our team! We are a group of dedicated professionals passionate about delivering the best support and solutions to meet our clients' needs. Each team member brings unique skills and experience, and we work together to provide outstanding service.</p>
+            <h3>Web Products We Offer</h3>
             <ul>
-              <li><strong>John Doe - Technical Lead</strong><br>John oversees technical projects and ensures our infrastructure is optimized and efficient. He brings over a decade of experience in the tech industry.</li>
-              <li><strong>Jane Smith - Support Specialist</strong><br>Jane is our go-to person for customer inquiries, with a knack for solving issues quickly and effectively. She’s committed to providing top-tier support with a personal touch.</li>
-              <li><strong>Emily Johnson - Customer Success Manager</strong><br>Emily manages client relationships and ensures they are maximizing the value of our services. With a background in client management, Emily excels at building long-lasting partnerships.</li>
+              <li><a href='#conversation-example'>Conversation</a></li>
+              <li><a href='#reactions-example'>Reactions</a></li>
+              <li><a href='#topic-tracker-example'>Topic Tracker</a></li>
+              <li><a href='#community-spotlight-example'>Conversation</a></li>
             </ul>
-            <div data-spotim-module="conversation"></div>
+            <div>
+              <div data-spotim-module="conversation" id="conversation-example"></div>
+              <div data-spotim-app="reactions" data-spot-id="sp_mPoNtNP6" id="reactions-example" data-post-id="ow_support"></div>
+            </div>
+            <div data-spotim-module="spotlight" id="spotlight-example"></div>
+            <div data-spotim-module="topic-tracker" id="spotlight-example" data-post-id="ow_support"></div>
+
           `;
           break;
       }
-
 
       contentDiv.innerHTML = content;
     }
