@@ -131,3 +131,19 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
   color: #d88f7a;
 }
+
+.convo-reactions-container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+}
+
+#conversation-example {
+  border: 2px solid blue;
+  width: 50%;
+}
+
+#reactions-example {
+  border: 2px solid red;
+  width: 50%;
+}

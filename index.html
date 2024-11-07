@@ -25,7 +25,6 @@
       OpenWeb Technical Support
     </div>
 
-    <!-- Added options below the title -->
     <div class="options">
       <a href="#" class="option-link" onclick="showContent('team')">Meet the Team</a>
       <a href="#" class="option-link" onclick="showContent('products')">Learn About OW Products</a>
@@ -37,12 +36,13 @@
         <div class="dropdown-content">
           <a href="https://www.notion.so/openweb/Tech-Support-bb5ef96f5b2841f5b8d3358c831bf3fa" target="_blank">Tech Support Guide</a>
           <a href="https://www.notion.so/openweb/Support-Workflow-2a08ed8d9b784a11858a56668f6acf21" target="_blank">Support Workflow</a>
+          <a href="https://www.notion.so/openweb/8b2871c613734149a1188b7c8f8e9225?v=4577089793bd4f49a6e56f43e3c0d6b5" target="_blank">FAQ</a>
         </div>
       </div>
       <div class="dropdown">
         <a href="#">Product Requests</a>
         <div class="dropdown-content">
-          <a href="https://www.notion.so/openweb/Tech-Support-Request-Cheatsheet-9e11f89f02ee466ca7aebafe702f2cc5" target="_blank">Tech Support Request Guide</a>
+          <a href="https://www.notion.so/openweb/Tech-Support-Request-Cheatsheet-9e11f89f02ee466ca7aebafe702f2cc5" target="_blank">Support Request Templates</a>
           <a href="https://openweb.lightning.force.com/lightning/o/Case/new" target="_blank">Submit a Support Ticket</a>
           <a href="https://spotim-jira.atlassian.net/jira/polaris/projects/PRD/ideas/view/1766382" target="_blank">PRD Board</a>
         </div>
@@ -58,7 +58,7 @@
       <div class="dropdown">
         <a href="#">Salesforce Ticket Info</a>
         <div class="dropdown-content">
-          <a href="https://www.notion.so/openweb/360fc72c08f2424ba94818f069e93a94?v=4550b3b949b64fa09689574f651ae486" target="_blank">Product Ownership</a>
+          <a href="https://www.notion.so/openweb/SFDC-Department-Queues-dd443968422f45818b2ae412e841852c" target="_blank">SF Department Queues</a>
           <a href="https://www.notion.so/openweb/How-to-create-a-support-case-in-Salesforce-5a3680035ad546f6b92668e8482c8a4c" target="_blank">SF Flow</a>
         </div>
       </div>
@@ -101,13 +101,13 @@
               <li><a href='#conversation-example'>Conversation</a></li>
               <li><a href='#reactions-example'>Reactions</a></li>
               <li><a href='#topic-tracker-example'>Topic Tracker</a></li>
-              <li><a href='#community-spotlight-example'>Conversation</a></li>
+              <li><a href='#spotlight-example'>Community Spotlight</a></li>
             </ul>
-            <div>
+            <div class="convo-reactions-container">
               <div data-spotim-module="conversation" id="conversation-example"></div>
               <div data-spotim-app="reactions" data-spot-id="sp_mPoNtNP6" id="reactions-example" data-post-id="ow_support"></div>
             </div>
-            <div data-spotim-module="spotlight" id="spotlight-example"></div>
+            <div data-conversation-spotlight id="spotlight-example"></div>
             <div data-spotim-module="topic-tracker" id="spotlight-example" data-post-id="ow_support"></div>
 
           `;
